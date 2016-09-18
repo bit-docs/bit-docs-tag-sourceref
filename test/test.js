@@ -14,7 +14,7 @@ describe("sourceref", function(){
 			docMap: docMap,
 			docObject: {
                 src: {
-                    path: path.join(__dirname, "code")
+                    path: path.join(__dirname, "code","test.js")
                 }
             },
 			tags: {

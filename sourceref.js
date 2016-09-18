@@ -15,7 +15,7 @@ module.exports = {
 
         var file;
         if(this.src.path) {
-            file = path.join(this.src.path, line.replace("@sourceref", "").trim());
+            file = path.join(path.dirname(this.src.path), line.replace("@sourceref", "").trim());
         } else {
             file = line.replace("@sourceref", "").trim()
         }
