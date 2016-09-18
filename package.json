@@ -1,6 +1,6 @@
 {
   "name": "bit-docs-tag-sourceref",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Reference source code in another file",
   "main": "sourceref.js",
   "scripts": {
