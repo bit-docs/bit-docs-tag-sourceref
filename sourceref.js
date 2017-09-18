@@ -12,7 +12,7 @@ var convertType = function(type) {
 
 /**
  * @parent bit-docs-tag-sourceref/tags
- * @module {bit-docs/types/tag} bit-docs-tag-sourceref/tags/sourceref @sourceref
+ * @module {bit-docs-process-tags/types/tag} bit-docs-tag-sourceref/tags/sourceref @sourceref
  * 
  * @description Loads a file and wraps it with markdown for code block.
  * 
