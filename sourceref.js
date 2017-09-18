@@ -10,6 +10,36 @@ var convertType = function(type) {
   return typeConverters[type] || type;
 };
 
+/**
+ * @parent bit-docs-tag-sourceref/tags
+ * @module {bit-docs-process-tags/types/tag} bit-docs-tag-sourceref/tags/sourceref @sourceref
+ * 
+ * @description Loads a file and wraps it with markdown for code block.
+ * 
+ * @signature `@sourceref PATH`
+ * 
+ * Wraps file contents with triple \` so it shows up as a code block.
+ * 
+ * @param {String} PATH The path to any kind of file.
+ * 
+ * @body
+ * 
+ * An example file might look like:
+ * 
+ * ```js
+ * var foo = 'bar';
+ * ```
+ * 
+ * That gets used like:
+ * 
+ * ```js
+ * @@sourceref ./demos/something.js
+ * ```
+ * 
+ * And renders like:
+ * 
+ * @@sourceref ./demos/something.js
+ */
 module.exports = {
     add: function(line, curData) {
 

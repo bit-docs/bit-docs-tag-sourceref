@@ -1,18 +1,16 @@
 var sourceref = require("./sourceref");
 
 /**
- * @module {function} bit-docs-tag-sourceref
  * @parent plugins
+ * @module {function} bit-docs-tag-sourceref
+ * @group bit-docs-tag-sourceref/tags tags
  *
  * @description Adds a `@sourceref` tag for use in `bit-docs`.
  *
  * @body
  *
- * `@sourceref` will load the file indicated like:
- *
- * `@sourceref ./relative/path/something.js`
- *
- * And wrap it with triple \` so it shows up as a code block.
+ * This plugin registers onto the `tags` hook to add the
+ * [bit-docs-tag-sourceref/tags/sourceref] tag.
  */
 module.exports=  function(bitDocs) {
     bitDocs.register("tags",{
